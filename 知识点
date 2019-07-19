@@ -1,0 +1,16 @@
+1.redis的连接
+import reids
+ client = redis.StrictRedis()
+
+2 连接mongodb的连接
+from pymongo import MongoClient
+# 没有设置权限验证，就不需要用户名和密码
+# client =MongoClient("mongodb://username:password@ip:port")
+client = MongoClient('mongodb://localhost:27017')
+database = client['Student']
+# 创建集合相当于sql的表名
+collection = database['test']
+
+3.request获取网页源代码
+
+4.xpath的提取数据
